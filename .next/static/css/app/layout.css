@@ -31,6 +31,7 @@ body {
   margin: 0;
   background: #303030;
   color: white;
+  box-sizing: border-box;
 }
 
 .title {
@@ -74,3 +75,19 @@ body {
   line-height: 0px;
 } 
 
+.btn {
+  padding: 8px 10px;
+  color: white;
+  font-weight: 400;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-red {
+  background-color: #dc3545;
+}
+
+.btn-blue {
+  background-color: #0d6efd;
+}

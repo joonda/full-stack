@@ -9,6 +9,8 @@ export default function Cart() {
       <CartItem />
       <Banner content='Shopping!' /> {/* Using Parameter (content) */}
       <Banner content='Game!' /> {/* Using Parameter (content) */}
+      <Btn coloring="#dc3545" />
+      <Btn coloring="#0d6efd" />
     </div>
   )
 }
@@ -22,7 +24,11 @@ interface ContentName {
   readonly content?: string;
 }
 
-// Using Parameter 
+interface ButtonColor {
+  readonly coloring?: string;
+}
+
+// Using Parameter (Banner components)
 function Banner(props: ContentName) {
   return <h5>Let's Play the {props.content}</h5>
 }
@@ -35,5 +41,11 @@ function CartItem(props: CartItemProps) {
       <p>$40</p>
       <p>1개</p>
     </div>
+  )
+}
+
+function Btn(props: ButtonColor) {
+  return (
+    <button style={{background:`${props.coloring}`}} className="btn">Click!</button>
   )
 }
