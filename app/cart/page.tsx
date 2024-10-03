@@ -44,6 +44,7 @@ function CartItem(props: CartItemProps) {
   )
 }
 
+// ButtonColor component
 function Btn(props: ButtonColor) {
   return (
     <button style={{background:`${props.coloring}`}} className="btn">Click!</button>
