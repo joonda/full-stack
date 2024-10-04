@@ -1,4 +1,4 @@
-// File: C:\Users\user\Documents\dev\my-app\app\cart\page.tsx
+// File: /Users/june/Desktop/nextjs_practice/my-app/app/cart/page.tsx
 import * as entry from '../../../../app/cart/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
